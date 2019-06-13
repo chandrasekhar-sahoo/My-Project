@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'crudapp/base.html' %}
+{% block body %}
+<h1>Employee Create Dash Board</h1><hr>
+<form method="post">
+  <table>
+    {{form}}
+    {% csrf_token %}
+  </table>
+  <br>
+  <input type="submit" name='btn' class="btn btn-primary" value="Add Record">
+</form>
+{% endblock %}
